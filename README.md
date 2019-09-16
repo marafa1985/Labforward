@@ -9,10 +9,10 @@ so that I can focus on important changes.
 
 We need to have a React compounent contains the following subComonents:
 
-1- Z-Score (ZValue Component): which define the data values that will represent signals peak.
-2- Data Values (IndicatorData): Which have to functionality: a) allow researcher to edit data value. b) reserach can add new values if needed.
-3- Data Chart (Actual Data): it chart represent the actual data values.
-4- Peak Chart (Areas of interest): which represent the peaks in the actual data.
+- Z-Score (ZValue Component): which define the data values that will represent signals peak.
+- Data Values (IndicatorData): Which have to functionality: a) allow researcher to edit data value. b) reserach can add new values if needed.
+- Data Chart (Actual Data): it chart represent the actual data values.
+- Peak Chart (Areas of interest): which represent the peaks in the actual data.
 
 ## Definition of Done
 - Unit tests passed: Task contains 7 testing unit to make sure that the usery story working as needed.
