@@ -1,3 +1,12 @@
+const AcceptOnlyumber = (value) => {
+    const re = /^[0-9\b]+$/;
+
+    if (value === '' || re.test(value)) {
+        return true
+    }
+    return false;
+}
+
 const seriesList = [
     {
         name: "Series 1",
@@ -15,8 +24,11 @@ const seriesList = [
         ]
     }
 ];
-const seriesData = () => {
+const SeriesData = () => {
     return seriesList;
 }
 
-export default seriesData;
+export {
+    SeriesData,
+    AcceptOnlyumber
+};

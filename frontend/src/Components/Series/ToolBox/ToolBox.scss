@@ -1,0 +1,34 @@
+// .toolbox {
+//   display: flex;
+//   flex-direction: column;
+//   div {
+//     display: flex;
+//     justify-content: flex-start;
+//     flex-wrap: wrap;
+//   }
+
+// }
+.data-block {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  .data-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .value-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 5px;
+      span {
+        height: 20px;
+      }
+      .data-value {
+        max-width: 35px;
+        text-align: center;
+      }
+    }
+  }
+}
