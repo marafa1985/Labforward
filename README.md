@@ -63,7 +63,7 @@ Wait untill finished.
 
 - Now you can open browser and goto url:
 
-[http://localhost:3001/](http://localhost:3001/)
+[http://localhost:3030/](http://localhost:3030/)
 
 
 ## e2e
