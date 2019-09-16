@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { AcceptOnlyumber } from '../../../Util'
-import './ToolBox.scss';
+import { AcceptOnlyumber } from '../../Util'
+import './IndicatorData.scss';
 
-const ToolBox = (props) => {
+const IndicatorData = (props) => {
     const [newvalue, setnewvalue] = useState(0);
 
     const appendValue = () => {
@@ -42,12 +42,12 @@ const ToolBox = (props) => {
     )
 }
 
-ToolBox.propTypes = {
+IndicatorData.propTypes = {
     data: PropTypes.array,
     handleDataValue: PropTypes.func,
     addNewValue: PropTypes.func,
     props: PropTypes.number
 }
 
-export default ToolBox
+export default IndicatorData
 

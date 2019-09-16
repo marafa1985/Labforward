@@ -1,5 +1,5 @@
 import React from 'react';
-import { Series } from './Components';
+import Series from './View/Series';
 import './App.scss';
 
 

@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Chart from 'react-apexcharts';
-import { ArrayMidValue, FromateSignal, ChartOption } from '../../../Util';
-import ToolBox from '../ToolBox/ToolBox';
-import FilterValue from '../FilterValue/FilterValue';
+import { ArrayMidValue, FromateSignal, ChartOption } from '../../Util';
+import IndicatorData from '../IndicatorData/IndicatorData';
+import ZValue from '../ZValue/FilterValue';
 import './Indicator.scss';
-import ArrowDown from '../../../img/arrow-down.svg';
+import IndicatorHeader from './IndicatorHeader';
+
 
 class Indicator extends PureComponent {
     constructor(props) {
@@ -79,18 +80,11 @@ class Indicator extends PureComponent {
             this.state.data &&
             <div className="acc-item">
                 <div className={(this.state.status ? "active" : "")}>
-                    <div className="acc-header" onClick={this.headerClicked}>
-                        <div className="acc-title ">
-                            {this.props.name}
-                        </div>
-                        <div className="icon">
-                            <img src={ArrowDown} alt="props.alt" />
-                        </div>
-                    </div>
+                    <IndicatorHeader name={this.props.name} headerClicked={this.headerClicked} />
                     <div className="acc-body">
                         <div className="toolbox">
-                            <FilterValue indValue={Number(this.state.indValue)} handleIndValue={this.handleIndValue} />
-                            <ToolBox data={this.state.data}
+                            <ZValue indValue={Number(this.state.indValue)} handleIndValue={this.handleIndValue} />
+                            <IndicatorData data={this.state.data}
                                 handleDataValue={this.handleDataValue} addNewValue={this.addNewValue} />
                         </div>
                         <div>

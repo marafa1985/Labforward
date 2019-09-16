@@ -65,7 +65,7 @@ const seriesList = [
     }
 ];
 const SeriesData = () => {
-    return Promise.resolve(seriesList);
+    return seriesList;
 }
 
 export {

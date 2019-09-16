@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  labforward:
+    image: labforward
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000

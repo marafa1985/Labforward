@@ -1,5 +1,5 @@
-import Series from './Series/Series';
+import Indicator from './Indicator/Indicator';
 
 export {
-    Series
+    Indicator
 }

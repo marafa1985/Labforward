@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './FilterValue.scss';
+import './ZValue.scss';
 
-const FilterValue = (props) => {
+const ZValue = (props) => {
     return (
         <div>
             <span>Z-Score:</span>
@@ -11,10 +11,10 @@ const FilterValue = (props) => {
     )
 }
 
-FilterValue.propTypes = {
+ZValue.propTypes = {
     indValue:PropTypes.number,
     handleIndValue: PropTypes.func
 }
 
-export default FilterValue
+export default ZValue
 
