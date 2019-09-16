@@ -5,7 +5,7 @@ import './FilterValue.scss';
 const FilterValue = (props) => {
     return (
         <div>
-            <span>Filter Actual Data:</span>
+            <span>Z-Score:</span>
             <input className="input-text" type="number" value={props.indValue} onChange={e => props.handleIndValue(e.target.value)} />
         </div>
     )

@@ -7,9 +7,18 @@ class Series extends Component {
         super(props)
 
         this.state = {
-            seriesList: [...SeriesData()],
+            seriesList: [],
             newseries: ''
         }
+    }
+    componentDidMount() {
+        // Simulate Request using Promise
+        SeriesData().then(data => {
+            this.setState({
+                seriesList: [...data]
+            })
+        }).catch(error => console.log(error));
+
     }
     handleClick = (value) => {
         this.setState({

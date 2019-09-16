@@ -94,8 +94,8 @@ class Indicator extends PureComponent {
                                 handleDataValue={this.handleDataValue} addNewValue={this.addNewValue} />
                         </div>
                         <div>
-                            <Chart options={ChartOption('Series')} series={this.state.series} type="line" height="150" />
-                            <Chart options={ChartOption('Signal')} series={this.state.signal} type="line" height="150" />
+                            <Chart options={ChartOption('Actual Data')} series={this.state.series} type="line" height="150" />
+                            <Chart options={ChartOption('Areas of interest')} series={this.state.signal} type="line" height="150" />
                         </div>
 
                     </div>
