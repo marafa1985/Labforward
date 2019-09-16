@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './FilterValue.scss';
 
 const FilterValue = (props) => {
     return (
         <div>
             <span>Filter Actual Data:</span>
-            <input type="number" value={props.indValue} onChange={e => props.handleIndValue(e.target.value)} />
+            <input className="input-text" type="number" value={props.indValue} onChange={e => props.handleIndValue(e.target.value)} />
         </div>
     )
 }

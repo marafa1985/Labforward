@@ -28,12 +28,12 @@ const ToolBox = (props) => {
                 }
                 <div className="data-list">
                     <div className="value-list">
-                        <span>{props.data.length + 1}</span>
+                        <span>New</span>
                         <input className="data-value" type="text" value={newvalue} onChange={e => checknewvalue(e.target.value)} />
                     </div>
                     <div className="value-list">
                         <span></span>
-                        <button onClick={e => appendValue()}>Add</button>
+                        <button className="btn" onClick={e => appendValue()}>Add</button>
                     </div>
 
                 </div>

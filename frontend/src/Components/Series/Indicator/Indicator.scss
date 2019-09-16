@@ -1,5 +1,66 @@
-.toolbox {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+@import "../../../color";
+
+.acc-item {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: solid 1px $cardborder;
+  margin: 15px;
+  .active {
+    .acc-header {
+      .acc-title {
+        background: #657189 !important;
+      }
+      .icon img {
+        transform: rotate(180deg);
+      }
+    }
+    .acc-body {
+      max-height: 100vh !important;
+      //   overflow-y: auto !important;
+    }
+  }
+  div {
+    .acc-header {
+      display: flex;
+      align-content: stretch;
+      cursor: pointer;
+      .acc-title {
+        background: #ebf0f4;
+        display: flex;
+        align-items: center;
+        color: $orange;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 0 18px;
+        flex-grow: 1;
+        justify-content: space-between;
+      }
+      .icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        background: $secondary;
+        img {
+          transition: transform 0.5s ease-out;
+        }
+      }
+    }
+    .acc-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+      &::-webkit-scrollbar {
+        width: 6px;
+        background-color: #f5f5f5;
+      }
+      .toolbox {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 10px;
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Series } from './Components';
-import './App.css';
+import './App.scss';
 
 
 function App() {

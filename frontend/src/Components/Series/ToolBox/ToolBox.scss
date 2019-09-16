@@ -1,22 +1,12 @@
-// .toolbox {
-//   display: flex;
-//   flex-direction: column;
-//   div {
-//     display: flex;
-//     justify-content: flex-start;
-//     flex-wrap: wrap;
-//   }
-
-// }
 .data-block {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  padding-top: 5px;
   .data-list {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-
     .value-list {
       display: flex;
       flex-direction: column;

@@ -1,3 +1,45 @@
+const ChartOption = (title) => {
+    return {
+        chart: {
+            zoom: {
+                enabled: false
+            },
+
+        },
+        dataLabels: {
+            enabled: false
+        },
+        xaxis: {
+            labels: {
+                formatter: function (val) {
+                    return ((val + 1) % 2) === 0 ? val : '.';
+                }
+            }
+        },
+        stroke: {
+            curve: 'straight'
+        },
+        title: {
+            text: title,
+            align: 'left'
+        },
+        grid: {
+            row: {
+                colors: ['#f3f3f3', 'transparent'],
+                opacity: 0.5
+            },
+        },
+
+    };
+}
+
+const ArrayMidValue = (data) => {
+    return Math.max(...data) / 2;
+}
+const FromateSignal = (arrdata, newvalue) => {
+    return arrdata.map(value => value > newvalue ? 1 : 0);
+}
+
 const AcceptOnlyumber = (value) => {
     const re = /^[0-9\b]+$/;
 
@@ -19,8 +61,6 @@ const seriesList = [
     {
         name: "Series 3",
         data: [2, 1, 3, 0, 2, 2, 9, 7, 2, 3, 1, 2, 9, 8, 2, 3, 1, 2, 0, 1, 2, 3, 0, 10, 9, 1, 2, 1, 0, 1, 2, 1, 8, 9, 8, 1, 2, 0, 2, 1, 2, 1, 14, 10, 0, 1, 1, 2, 0, 3
-
-
         ]
     }
 ];
@@ -30,5 +70,8 @@ const SeriesData = () => {
 
 export {
     SeriesData,
-    AcceptOnlyumber
+    AcceptOnlyumber,
+    ArrayMidValue,
+    FromateSignal,
+    ChartOption
 };
